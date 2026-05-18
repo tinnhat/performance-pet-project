@@ -1,0 +1,9 @@
+Default render:
+{
+    "id": "MainTable",
+    "phase": "mount",
+    "actualDuration": "537.70ms",
+    "baseDuration": "240.20ms",
+    "startTime": "285.20ms",
+    "commitTime": "834.30ms"
+}
