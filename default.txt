@@ -1,9 +1,9 @@
-Default render:
+incognito tab:
 {
     "id": "MainTable",
     "phase": "mount",
-    "actualDuration": "537.70ms",
-    "baseDuration": "240.20ms",
-    "startTime": "285.20ms",
-    "commitTime": "834.30ms"
+    "actualDuration": "448.80ms",
+    "baseDuration": "252.20ms",
+    "startTime": "183.60ms",
+    "commitTime": "644.70ms"
 }
