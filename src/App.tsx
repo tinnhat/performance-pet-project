@@ -1,6 +1,7 @@
 import React, { Profiler } from 'react'
 import './App.css'
-import Main from './components/Main'
+import TanStackTable from './components/TanStackTable'
+import type { User } from './components/types'
 
 function onRender(
   id: string,
@@ -20,9 +21,8 @@ function onRender(
   })
 }
 
-
-const generateData = () => {
-  const data = []
+const generateData = (): User[] => {
+  const data: User[] = []
   for (let i = 0; i < 10000; i++) {
     data.push({
       id: i,
@@ -38,11 +38,12 @@ const generateData = () => {
   }
   return data
 }
+
 function App() {
-  const [data] = React.useState(generateData())
+  const [data] = React.useState<User[]>(() => generateData())
   return (
-   <Profiler id="MainTable" onRender={onRender}>
-      <Main data={data} />
+    <Profiler id="TanStackTable" onRender={onRender}>
+      <TanStackTable data={data} />
     </Profiler>
   )
 }

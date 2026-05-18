@@ -1,9 +1,0 @@
-incognito tab:
-{
-    "id": "MainTable",
-    "phase": "mount",
-    "actualDuration": "448.80ms",
-    "baseDuration": "252.20ms",
-    "startTime": "183.60ms",
-    "commitTime": "644.70ms"
-}
